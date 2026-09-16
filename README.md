@@ -48,6 +48,7 @@ where puzzle-string is a list of 9 strings of length 9, composed of digits and q
         "?6????28?"
         "???419??5"
         "????8??79"))
+ 
  (list
   (list 5 3 4 6 7 8 9 1 2)
   (list 6 7 2 1 9 5 3 4 8)
