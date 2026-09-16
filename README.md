@@ -3,7 +3,7 @@
 # Sudoku Solver (Racket / Scheme)
 
 A complete Sudoku solver implemented in Racket using functional programming
-paradigms
+paradigms.
 
 ## How it works
 
@@ -64,5 +64,4 @@ where puzzle-string is a list of 9 strings of length 9, composed of digits and q
 ## Notes
 
 Built as a functional-programming exercise: the goal was to solve the problem
-using pure functions and recursion — no in-place array mutation — while
-keeping the constraint logic and search logic cleanly separated.
+using pure functions and recursion, without array mutation or loops.
