@@ -33,7 +33,32 @@ The solver combines two strategies:
 
 (solve (strings->puzzle puzzle-string))
 ```
+where puzzle-string is a list of 9 strings of length 9, composed of digits and questions marks (for blank entries).
 
+## Example
+
+(check-expect
+ (solve-sudoku
+  (list "53??7????"
+        "6??195???"
+        "?98????6?"
+        "8???6???3"
+        "4??8?3??1"
+        "7???2???6"
+        "?6????28?"
+        "???419??5"
+        "????8??79"))
+ (list
+  (list 5 3 4 6 7 8 9 1 2)
+  (list 6 7 2 1 9 5 3 4 8)
+  (list 1 9 8 3 4 2 5 6 7)
+  (list 8 5 9 7 6 1 4 2 3)
+  (list 4 2 6 8 5 3 7 9 1)
+  (list 7 1 3 9 2 4 8 5 6)
+  (list 9 6 1 5 3 7 2 8 4)
+  (list 2 8 7 4 1 9 6 3 5)
+  (list 3 4 5 2 8 6 1 7 9)))
+ 
 
 ## Notes
 
